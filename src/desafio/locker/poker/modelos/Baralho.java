@@ -11,9 +11,9 @@ public class Baralho {
 	//Gera o baralho a partir dos valores e naipes 
 	public Baralho() {
 		
-		for(Naipe naipe : Naipe.values()) {
+		for(NaipeEnum naipe : NaipeEnum.values()) {
 			
-			for(Valor valor : Valor.values()) {
+			for(ValorEnum valor : ValorEnum.values()) {
 				Carta carta = new Carta(valor, naipe);
 				cartas.add(carta);
 			}

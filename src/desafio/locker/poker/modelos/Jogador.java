@@ -6,7 +6,16 @@ public class Jogador {
 	
 	private String nome;
 	private List<Carta> mao;
+	private PokerRegraEnum pontuacao;
 	
+	public PokerRegraEnum getPontuacao() {
+		return pontuacao;
+	}
+
+	public void setPontuacao(PokerRegraEnum pontuacao) {
+		this.pontuacao = pontuacao;
+	}
+
 	public List<Carta> getMao() {
 		return mao;
 	}
@@ -26,4 +35,11 @@ public class Jogador {
 	public Jogador(String nome) {
 		this.nome = nome;
 	}
+	
+	@Override
+	public String toString() {
+		return "Jogador [nome=" + nome + ", mao=" + mao + ", pontuacao="
+				+ pontuacao + "]";
+	}
+	
 }
